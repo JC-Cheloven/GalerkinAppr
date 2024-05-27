@@ -5,7 +5,9 @@ This program is intended for educational purposes. In Galerkin approximations th
 
 Bare Galerkin approximations are feasible for simple geometries only, but the process of choosing adequate functions for the problem at hand has a high educational value. This program is intended to make easier the process of trial-and-test the proposed functions. Usually, we want to use no more than a handful of functions but, even in this case, operating the approximation by hand would be a discouraging scenario.
 
+The program runs on Python3, and requires Tkinter, MatPlotLib, NumPy and SymPy libraries.
+
 I hope you'll find GalerkinAppr interesting.
-The author
+The author.
 JC del Caño
 _____________________
