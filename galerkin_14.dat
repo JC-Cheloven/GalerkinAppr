@@ -1,0 +1,44 @@
+cuadrado de lado 8. T=y**2. Prueba de funciones exp, cos, etc
+
+Num_de_nodos    Num_de_elementos
+     8                 1
+
+iNodo    coor_x    coor_y
+ 1       -4.0      0.0
+ 2         0.      0.0
+ 3         4.      0.0
+ 4         4.      4. 
+ 5         4.      8.0
+ 6         0.      8.0
+ 7        -4.      8.0
+ 8        -4.       4. 
+
+  iElem  tipoE         nodos
+    1      0       1 2 3 4 5 6 7 8
+
+Funciones de aproximacion:
+    4
+  Para ux: 
+    x*y/8**2
+    x*(8-y)/8**2
+    x**3*y**2/8**5
+    x**3*(8-y)**2/8**5
+  Para uy: 
+    y/8
+    y*y/8**2
+    x**2*y**3/8**5
+    x**2*(y-8)**3/8**5
+
+Constantes elasticas E, nu (Young, Poisson), alfa_dilat, tipo de prb (TP o DP)
+    1.0   0.0  1.0   TP
+    
+Cargas en orden: contorno -> puntuales -> volumen(1o0) -> termica(1o0)
+  contorno   0
+  puntual    2
+    5  0.  10
+    7  0.  10
+  volumen    0
+  termica    0
+# ___fin____
+
+

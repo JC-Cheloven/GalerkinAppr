@@ -1,0 +1,80 @@
+Identificación:  /home/jc/proyectitos_jc/aprox_Galerkin/v07/galerkin_16b.dat
+
+Num_de_nodos     Num_de_elementos
+       13                2
+
+iNodo    coor_x    coor_y 
+  1    30.000     0.000
+  2    27.716    11.481
+  3    21.213    21.213
+  4    11.481    27.716
+  5     0.000    30.000
+  6    65.000     0.000
+  7    45.962    45.962
+  8     0.000    65.000
+  9   100.000     0.000
+ 10    92.388    38.268
+ 11    70.711    70.711
+ 12    38.268    92.388
+ 13     0.000   100.000
+
+iElem     tipoE            nodos
+  1   0       1  6  9  10  11  7  3  2
+  2   0       3  7  11  12  13  8  5  4
+
+Funciones de aproximacion:
+   20 
+  Para ux:
+    sin(x*1.5708e-2)
+    sin(x*3.1416e-2)
+    sin(x*4.1724e-2)
+    sin(x*6.2832e-2)
+        sin(x*1.5708e-2)*cos(y*1.5708e-2)
+        sin(x*3.1416e-2)*cos(y*1.5708e-2)
+        sin(x*4.1724e-2)*cos(y*1.5708e-2)
+        sin(x*6.2832e-2)*cos(y*1.5708e-2)
+    sin(x*1.5708e-2)*cos(y*3.1416e-2)
+    sin(x*3.1416e-2)*cos(y*3.1416e-2)
+    sin(x*4.1724e-2)*cos(y*3.1416e-2)
+    sin(x*6.2832e-2)*cos(y*3.1416e-2)
+        sin(x*1.5708e-2)*cos(y*4.1724e-2)
+        sin(x*3.1416e-2)*cos(y*4.1724e-2)
+        sin(x*4.1724e-2)*cos(y*4.1724e-2)
+        sin(x*6.2832e-2)*cos(y*4.1724e-2)
+    sin(x*1.5708e-2)*cos(y*6.2832e-2)
+    sin(x*3.1416e-2)*cos(y*6.2832e-2)
+    sin(x*4.1724e-2)*cos(y*6.2832e-2)
+    sin(x*6.2832e-2)*cos(y*6.2832e-2)
+  Para uy:
+    sin(y*1.5708e-2)
+    sin(y*3.1416e-2)
+    sin(y*4.1724e-2)
+    sin(y*6.2832e-2)
+        sin(y*1.5708e-2)*cos(x*1.5708e-2)
+        sin(y*3.1416e-2)*cos(x*1.5708e-2)
+        sin(y*4.1724e-2)*cos(x*1.5708e-2)
+        sin(y*6.2832e-2)*cos(x*1.5708e-2)
+    sin(y*1.5708e-2)*cos(x*3.1416e-2)
+    sin(y*3.1416e-2)*cos(x*3.1416e-2)
+    sin(y*4.1724e-2)*cos(x*3.1416e-2)
+    sin(y*6.2832e-2)*cos(x*3.1416e-2)
+        sin(y*1.5708e-2)*cos(x*4.1724e-2)
+        sin(y*3.1416e-2)*cos(x*4.1724e-2)
+        sin(y*4.1724e-2)*cos(x*4.1724e-2)
+        sin(y*6.2832e-2)*cos(x*4.1724e-2)
+    sin(y*1.5708e-2)*cos(x*6.2832e-2)
+    sin(y*3.1416e-2)*cos(x*6.2832e-2)
+    sin(y*4.1724e-2)*cos(x*6.2832e-2)
+    sin(y*6.2832e-2)*cos(x*6.2832e-2)
+ 
+     E        nu      alfa_temp     TP/DP
+   1.000     0.000     0.000  TP      
+
+Cargas: contorno -> puntual -> volumen(1ó0) -> termica(1ó0)
+  contorno   2
+    nt 5 4 3 -2.0 -2.0 -2.0 0.0 0.0 0.0
+    nt 3 2 1 -2.0 -2.0 -2.0 0.0 0.0 0.0
+  puntual    0
+  volumen    0
+  termica    0
+# ___fin___

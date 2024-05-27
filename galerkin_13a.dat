@@ -1,0 +1,45 @@
+Identificación:  /home/jc/proyectitos_jc/aprox_Galerkin/v07/galerkin_13a.dat
+
+Num_de_nodos     Num_de_elementos
+        8                1
+
+iNodo    coor_x    coor_y 
+  1    -4.000     0.000
+  2     0.000     0.000
+  3     4.000     0.000
+  4     4.000     4.000
+  5     4.000     8.000
+  6     0.000     8.000
+  7    -4.000     8.000
+  8    -4.000     4.000
+
+iElem     tipoE            nodos
+  1   0       1  2  3  4  5  6  7  8
+
+Funciones de aproximacion:
+    6 
+  Para ux:
+    x  /10
+    x**3  / 1.e3
+    x*  y /1.e2
+    x**3*  y /1.e4
+    x*  y**2 /1.e3
+    x**3*  y**2 /1.e5
+  Para uy:
+    y  /10
+    y**2  / 100
+    x**2  /100
+    x**2*y  /1.e3
+    x**2*y**2  /1.e4
+    x**2*y**3  /1.e5
+
+     E        nu      alfa_temp     TP/DP
+1000.000     0.000     0.001  TP      
+
+Cargas: contorno -> puntual -> volumen(1ó0) -> termica(1ó0)
+  contorno   0
+  puntual    0
+  volumen    0
+  termica    1
+  y
+# ___fin___

@@ -1,0 +1,44 @@
+cugna semicircular en +-18 grados  (pi/10)
+
+Num_de_nodos    Num_de_elementos
+     6                 1
+
+iNodo    coor_x             coor_y
+ 1   0.0                 0.0
+ 2   4.755282581475767  -1.545084971874737
+ 3   9.510565162951535  -3.090169943749474
+ 4  10.0                 0.0
+ 5   9.510565162951535   3.090169943749474
+ 6   4.755282581475767   1.545084971874737
+
+  iElem  tipoE         nodos
+    1      1     1 2 3 4 5 6
+
+Funciones de aproximacion:
+    6
+  Para ux:
+    x    /10
+    x**2 /1.e2
+    x**3 /1.e3
+    x*   y**2 /90
+    x**2*y**2 /9.e2
+    x**3*y**2 /9.e3
+  Para uy:
+    x*   y /30
+    x**2*y /3.e2
+    x**3*y /3.e3
+    x*   y**3 /2.7e2
+    x**2*y**3 /2.7e3
+    x**3*y**3 /2.7e4
+
+    E    nu    alfa_temp     TP/DP
+    1.   0.      0.           TP
+
+Cargas
+  contorno  1
+    nt  3 4 5    80. 80. 80.   0.  0.  0.
+  puntual  0
+  volumen  0
+  termica  0
+# ___fin____
+
